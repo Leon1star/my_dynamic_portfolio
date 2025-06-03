@@ -36,7 +36,7 @@ const projectsContainer = document.getElementById('projects-container');
 
 async function loadProjects() {
     try {
-        const response = await fetch('data/portfolio_items.json');
+        const response = await fetch('Data/portfolio_items.json');
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const projects = await response.json();
         projects.forEach(project => {
